@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, rgba(255,0,31,1) 44%, rgba(255,0,112,1) 60%);
+  overflow-x: hidden; /* Evita a barra de rolagem horizontal no celular */
+}
+
+.container {
+  width: 100%; /* Garante largura total da tela */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title1 {
+  margin-bottom: 20px;
+}
+
+.title1 h1 {
+  color: #FFF;
+  font-size: 2.5rem; /* Tamanho de fonte adaptável */
+}
+
+.content1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.content1 button {
+  height: 50px;
+  width: 120px; /* Largura do botão ajustável */
+  border-radius: 8px;
+  border: 2px solid #FFF;
+  background-color: red;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.yes:hover {
+  background-color: rgb(249, 84, 84);
+}
+
+.content1 span {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content2 {
+  text-align: center;
+  position: relative; /* Define o posicionamento relativo */
+}
+
+.content2 img {
+  height: auto;
+  max-width: 100%; /* Largura máxima da imagem */
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #FFF;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.date {
+  text-align: left;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.date p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 5px;
+}
+
+/* Media query para telas menores (celulares) */
+@media only screen and (max-width: 768px) {
+  /* Ajusta o padding para telas menores */
+  .container {
+    padding: 10px;
+  }
+
+  /* Aumenta o tamanho da fonte do título para melhor legibilidade */
+  .title1 h1 {
+    font-size: 2rem;
+  }
+
+  /* Ajusta o tamanho da fonte dos botões */
+  .content1 button {
+    font-size: 16px;
+  }
+
+  /* Reduz um pouco o espaçamento entre os botões */
+  .content1 button {
+    margin: 0 5px;
+  }
+}
